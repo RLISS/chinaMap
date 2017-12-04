@@ -17,5 +17,5 @@
         function(){
             $(".addressInfo").hide();
         }
-    );`
-
+    );
+    `

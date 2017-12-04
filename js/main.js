@@ -18,7 +18,6 @@ function maphover(){
 			self = $(this);
 			self.children("div").hide();
 			self.removeClass("hover");
-            var cityStr = $(this).data("id");
             $(".addressInfo").hide();
 		}
 	);
@@ -33,17 +32,4 @@ function maphover(){
             $(".addressInfo").hide();
         }
     );
-	/*
-	$(".city").click(
-		function(){
-			self = $(this);
-			self.addClass("hover").children("div").show();
-		},
-		function(){
-			self = $(this);
-			self.children("div").hide();
-			self.removeClass("hover");
-		}
-	);
-	*/
 };
