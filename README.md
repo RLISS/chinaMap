@@ -6,3 +6,16 @@
 显示框内容进行处理，每行显示三个，异步获取后台数据，前端根据相关标志位，进行数据处理及展示。
 ![站点分布图](https://img.mukewang.com/5a1fab600001ca6308610652.png)
 
+#main.js
+增加以下处理代码，优化鼠标移动到显示内容框区域，信息框自动隐藏问题；满足可移到内容框直接复制内容信息目的。
+$(".addressInfo").hover(
+        function(){
+            $(".addressInfo").hide();
+            self = $(this);
+            self.show();
+        },
+        function(){
+            $(".addressInfo").hide();
+        }
+    );
+

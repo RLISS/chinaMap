@@ -22,6 +22,17 @@ function maphover(){
             $(".addressInfo").hide();
 		}
 	);
+
+    $(".addressInfo").hover(
+        function(){
+            $(".addressInfo").hide();
+            self = $(this);
+            self.show();
+        },
+        function(){
+            $(".addressInfo").hide();
+        }
+    );
 	/*
 	$(".city").click(
 		function(){
