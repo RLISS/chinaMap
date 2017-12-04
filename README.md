@@ -8,14 +8,14 @@
 
 #main.js
 增加以下处理代码，优化鼠标移动到显示内容框区域，信息框自动隐藏问题；满足可移到内容框直接复制内容信息目的。
-    `$(".addressInfo").hover(
-        function(){
-            $(".addressInfo").hide();
-            self = $(this);
-            self.show();
-        },
-        function(){
-            $(".addressInfo").hide();
-        }
-    );
-    `
+$(".addressInfo").hover(
+    function(){
+        $(".addressInfo").hide();
+        self = $(this);
+        self.show();
+    },
+    function(){
+        $(".addressInfo").hide();
+    }
+);
+    
