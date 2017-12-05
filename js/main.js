@@ -27,9 +27,17 @@ function maphover(){
             $(".addressInfo").hide();
             self = $(this);
             self.show();
+            var addStr = $(this).data("content");
+            $(".city").children("div").hide();
+            $(".city").removeClass("hover");
+            $(".city").each(function() {
+                if ($(this).data("id") == addStr) $(this).addClass("hover").children("div").show();
+            });
         },
         function(){
             $(".addressInfo").hide();
+            $(".city").children("div").hide();
+            $(".city").removeClass("hover");
         }
     );
 };
